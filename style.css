@@ -1,0 +1,111 @@
+/* Global reset and styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Border for Lesson 1 slide only */
+.lesson1 {
+  border: 6px solid #ff69b4;  /* 6px width for Lesson 1 */
+}
+
+.container {
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+  margin-top: 20px;  /* Adds space from the top */
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff69b4;
+}
+
+/* Slide hiding mechanism */
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Glowing title for CyberGlow */
+.glow {
+  color: #ff69b4;
+  text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  font-size: 3em;
+}
+
+.glow-sub {
+  font-size: 1.5em;
+}
+
+/* Glowing lesson numbers (light pink now) */
+.lesson-number {
+  color: #ffb6c1; /* Light Pink */
+  text-shadow: 0 0 5px #ffb6c1, 0 0 10px #ffb6c1, 0 0 15px #ffb6c1;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Glowing Lesson titles */
+.slide h2 {
+  font-size: 36px;
+  color: #ff69b4; /* Hot pink */
+  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
+  margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+.slide p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin: 20px 0;
+  color: white;
+}
+
+/* Button styling */
+button {
+  background-color: #ff69b4;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff69b4;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #ff85c1;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 
+      0 0 10px #ff69b4, 
+      0 0 20px #ff69b4, 
+      0 0 30px #ff69b4, 
+      0 0 40px #ff69b4;
+  }
+  50% {
+    text-shadow: 
+      0 0 5px #ff1493, 
+      0 0 15px #ff69b4, 
+      0 0 25px #ff69b4, 
+      0 0 35px #ff1493;
+  }
+}
+
+.glow {
+  color: #ff69b4;
+  font-size: 3em;
+  animation: glowPulse 2s infinite ease-in-out;
+}
