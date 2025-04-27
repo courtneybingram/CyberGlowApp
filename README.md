@@ -3,4 +3,4 @@ This is my SENIOR final project for Human Behavior and Privacy. It was about Sec
 
 Just click on index.html and I hope you enjoy!
 
-Live Demo @ [https](https://courtneybingram.github.io/CyberGlowApp/)
+[Live Demo](https://courtneybingram.github.io/CyberGlowApp/)
